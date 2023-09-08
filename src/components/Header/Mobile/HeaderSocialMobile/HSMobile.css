@@ -1,0 +1,33 @@
+.header-social-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.header-social-title-mobile {
+  color: #CDA274;
+  font-family: DM Serif Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header-social-item-moblie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.rotate-mobile {
+  writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 769px) {
+  .header-social-mobile {
+    display: flex;
+  }
+}

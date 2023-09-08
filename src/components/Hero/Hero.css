@@ -1,0 +1,114 @@
+.hero {
+  margin-bottom: 10%;
+  width: 100;
+  height: 80vh;
+  background-image: url("/public/img/hero-bg.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0px 0px 0px 200px;
+}
+
+.hero-wrap {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.hero-wrap h6 {
+  text-align: left;
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%; /* 81.25px */
+}
+
+.hero-text {
+  width: 40%;
+  text-align: left;
+  color: #4d5053;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+}
+
+.hero-button-get-started {
+  width: 160px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 18px 20px 18px 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  border-radius: 30px;
+  background-color: #292f36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  transition: all 0.2s linear;
+}
+
+.hero-button-get-started:hover {
+  background-color: #4d5053;
+  transition: all 0.1s linear;
+  scale: 1.1;
+}
+
+.hero-button-get-started p {
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: 0.36px;
+}
+
+.hero-button-get-started p:hover {
+  color: #ebe097;
+  transition: all 0.1s linear;
+}
+
+.hero-button-get-started img {
+  width: 15px;
+  height: 13px;
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    background-size: cover;
+  }
+  .hero-button-get-started {
+    padding: 18px 20px 18px 30px;
+  }
+
+  .hero-button-get-started p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero-wrap h6 {
+    font-size: 20px;
+  }
+}

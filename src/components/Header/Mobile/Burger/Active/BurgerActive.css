@@ -1,0 +1,13 @@
+.burger-active {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .burger-active {
+    margin: 60px auto 40px auto;
+    display: block;
+    color: #CDA274;
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,41 @@
+.h-nav-line-wrap {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h-nav-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.h-nav-line li {
+  list-style: none;
+}
+
+.h-nav-line li a {
+  text-decoration: none;
+  color: #292f36;
+  text-align: center;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+  transition: all 0.3s;
+}
+
+.h-nav-line li a:hover {
+  color: #a4a6a7;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 769px) {
+  .h-nav-line {
+    display: none;
+  }
+}

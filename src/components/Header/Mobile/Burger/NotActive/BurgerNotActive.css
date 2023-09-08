@@ -1,0 +1,12 @@
+.burger-not-active {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .burger-not-active {
+    display: block;
+    color: #CDA274;
+    width: 35px;
+    height: 35px;
+  }
+}
