@@ -1,8 +1,15 @@
-import React from "react";
-import "./WannaJoin.css"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./WannaJoin.css";
 function WannaJoin() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <section className="wanna-join">
+    <section data-aos="fade-up" className="wanna-join">
       <div className="container">
         <div className="wanna-join-wrap">
           <div className="wanna-join-text">
