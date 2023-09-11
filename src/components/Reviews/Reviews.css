@@ -74,7 +74,7 @@
 .reviews-cart {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   gap: 25px;
   width: 25%;
@@ -84,6 +84,7 @@
 }
 
 .reviews-avatar-wrap {
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: left;
