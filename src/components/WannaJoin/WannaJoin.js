@@ -18,7 +18,7 @@ function WannaJoin() {
           </div>
           <button>
             <p>Contact With Us</p>
-            <img src="img/interface/coffe-vector.svg" alt="arrow"></img>
+            <img src="img/interface/dark-vector.svg" alt="arrow"></img>
           </button>
         </div>
       </div>
