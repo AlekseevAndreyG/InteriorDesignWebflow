@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./WannaJoin.css"
 function WannaJoin() {
   return (
     <section className="wanna-join">
