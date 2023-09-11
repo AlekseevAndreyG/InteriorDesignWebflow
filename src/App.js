@@ -13,6 +13,7 @@ import CounterTotal from "./components/CounterTotal/CounterTotal";
 import Blog from "./components/Blog/Blog";
 import OurPartnersMobile from "./components/OurPartners/OurPartnersMobile/OurPartnersMobile";
 import WannaJoin from "./components/WannaJoin/WannaJoin";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
       <CounterTotal />
       <Blog />
       <WannaJoin />
+      <Footer />
     </div>
   );
 }
