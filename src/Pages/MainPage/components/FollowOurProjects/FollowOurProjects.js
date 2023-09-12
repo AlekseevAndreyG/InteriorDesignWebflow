@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./FollowOurProjects.css";
-import FollowOurProjectsArray from "../Arrays/FollowOurProjectsData";
+import FollowOurProjectsData from "../../../../Arrays/FollowOurProjectsData";
 
 function FollowOurProjects() {
   useEffect(() => {
@@ -22,7 +22,7 @@ function FollowOurProjects() {
             </p>
           </div>
           <div className="follow-our-projects-cart-wrap">
-            {FollowOurProjectsArray.map((card, index) => (
+            {FollowOurProjectsData.map((card, index) => (
               <div data-aos="fade-up" key={index} className="follow-our-projects-cart">
                 <img src={card.image} alt="Project" />
                 <div className="follow-our-projects-cart-info">

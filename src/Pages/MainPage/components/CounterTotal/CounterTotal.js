@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CounterTotalData from "../Arrays/CounterTotalData";
+import CounterTotalData from "../../../../components/Arrays/CounterTotalData";
 import "./CounterTotal.css";
 
 function CounterTotal() {

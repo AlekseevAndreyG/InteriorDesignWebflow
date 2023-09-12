@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./FollowOurProjectMobile.css";
-import FollowOurProjectsArray from "../../Arrays/FollowOurProjectsData";
+import FollowOurProjectsData from "../../../../../components/Arrays/FollowOurProjectsData";
 
 const Slide = ({ background, title, category, subcategory }) => (
   <div className="slide">
@@ -47,7 +47,7 @@ const FollowOurProjectMobile = () => {
             centerMode={true}
             centerPadding="50"
           >
-            {FollowOurProjectsArray.map((card, index) => (
+            {FollowOurProjectsData.map((card, index) => (
               <Slide
                 key={index}
                 background={card.image}

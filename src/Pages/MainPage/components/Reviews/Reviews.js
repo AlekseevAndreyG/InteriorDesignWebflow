@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Reviews.css";
-import reviewsData from "../Arrays/ReviewsData.js";
+import reviewsData from "../../../../components/Arrays/ReviewsData";
 
 function Reviews() {
   useEffect(() => {
@@ -27,9 +27,7 @@ function Reviews() {
                     <p>{`${review.country}, ${review.city}`}</p>
                   </div>
                 </div>
-                <p className="review-text">
-                  {review.review}
-                </p>
+                <p className="review-text">{review.review}</p>
               </div>
             ))}
           </div>
