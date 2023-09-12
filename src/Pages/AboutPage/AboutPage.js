@@ -1,6 +1,11 @@
 import React from "react";
+import AboutUsHero from "./components/AboutUsHero/AboutUsHero";
 
 const AboutPage = () => {
-  return <section>about page</section>;
+  return (
+    <section>
+      <AboutUsHero />
+    </section>
+  );
 };
 export default AboutPage;
