@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./HeaderMobile.css";
 import BurgerActive from "./Burger/Active/BurgerActive";

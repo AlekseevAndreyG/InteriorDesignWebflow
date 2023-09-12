@@ -30,7 +30,7 @@ const Slide = ({ imagePath }) => (
       className="our-partners-mobil-slide-content"
       style={{ backgroundImage: `url(${imagePath})` }}
     >
-      <img src={imagePath} alt="Slide Image" />
+      <img src={imagePath} alt="Slide" />
     </div>
   </div>
 );
