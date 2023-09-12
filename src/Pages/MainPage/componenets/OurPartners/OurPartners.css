@@ -1,0 +1,24 @@
+.our-partners-wrap {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 940px) {
+  .our-partners-wrap {
+    flex-direction: column;
+    gap: 65px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-partners {
+    display: none;
+    margin-top: 20%;
+  }
+}
