@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./componenets/Hero/Hero";
+import Hero from "./components/Hero/Hero";
 import Plan from "./componenets/Plan/Plan";
 import PlanMobile from "./components/Plan/PlanMobile/PlanMobile";
 import AboutUs from "./components/AboutUs/AboutUs";
