@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
 import "./HNavLine.css";
 import HeaderSearch from "../HeaderSearch/HeaderSearch";
 
@@ -8,22 +8,22 @@ function HNavLine(props) {
     <div className="h-nav-line-wrap">
       <ul className="h-nav-line">
         <li>
-          <Link to="/src/Pages/.....">Home</Link>
+          <NavLink to="/src/Pages/.....">Home</NavLink>
         </li>
         <li>
-          <Link to="/src/Pages/.....">Pages</Link>
+          <NavLink to="/src/Pages/.....">Pages</NavLink>
         </li>
         <li>
-          <Link to="/src/Pages/.....">Services</Link>
+          <NavLink to="/src/Pages/.....">Services</NavLink>
         </li>
         <li>
-          <Link to="/src/Pages/.....">Project</Link>
+          <NavLink to="/src/Pages/.....">Project</NavLink>
         </li>
         <li>
-          <Link to="/src/Pages/.....">Blog</Link>
+          <NavLink to="/src/Pages/.....">Blog</NavLink>
         </li>
         <li>
-          <Link to="/src/Pages/.....">Contact</Link>
+          <NavLink to="/src/Pages/.....">Contact</NavLink>
         </li>
         <HeaderSearch />
       </ul>

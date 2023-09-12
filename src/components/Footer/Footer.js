@@ -1,27 +1,20 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import Logo from "../Logo/Logo";
+
 function Footer() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpandedPages, setIsExpandedPages] = useState(false);
+  const [isExpandedServices, setIsExpandedServices] = useState(false);
 
-  const pagesData = {
-    isExpanded: false,
-    list: ["About Us", "Our Projects", "Our Team", "Contact Us", "Services"],
+  const handleToggleExpandPages = () => {
+    setIsExpandedPages(!isExpandedPages);
   };
 
-  const servicesData = {
-    isExpanded: false,
-    list: ["Kitchan", "Living Area", "Bathroom", "Dinning Hall", "Bedroom"],
+  const handleToggleExpandServices = () => {
+    setIsExpandedServices(!isExpandedServices);
   };
 
-  const [pages, setPages] = useState({ ...pagesData });
-
-  const [services, setServices] = useState(servicesData);
-
-  const handleToggleExpand = () => {
-    setIsExpanded(!isExpanded);
-    console.log(isExpanded);
-  };
   return (
     <section className="footer">
       <div className="container">
@@ -50,56 +43,50 @@ function Footer() {
           <div className="footer-wrap-column">
             <div
               className={`footer_column_list ${
-                pages.isExpanded ? "expanded" : ""
+                isExpandedPages ? "expanded" : ""
               }`}
             >
               <ul className="footer_column_list">
-                <h5
-                  onClick={() => {
-                    setPages({
-                      ...pages,
-                      isExpanded: !pages.isExpanded,
-                    });
-                  }}
-                >
-                  Pages
-                </h5>
-                {pages.list.map((item) => {
-                  return (
-                    <>
-                      <li>
-                        <a href="localhost">{item}</a>
-                      </li>
-                    </>
-                  );
-                })}
+                <h5 onClick={handleToggleExpandPages}>Pages</h5>
+                <li>
+                  <Link to="/src/Pages/.....">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Our Projects</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Our Team</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Services</Link>
+                </li>
               </ul>
             </div>
             <div className="footer_object_two_item_services footer_column">
               <ul
                 className={`footer_column_list ${
-                  services.isExpanded ? "expanded" : ""
+                  isExpandedServices ? "expanded" : ""
                 }`}
               >
-                <h5
-                  onClick={() => {
-                    setServices({
-                      ...services,
-                      isExpanded: !services.isExpanded,
-                    });
-                  }}
-                >
-                  Services
-                </h5>
-                {services.list.map((item) => {
-                  return (
-                    <>
-                      <li>
-                        <a href="localhost">{item}</a>
-                      </li>
-                    </>
-                  );
-                })}
+                <h5 onClick={handleToggleExpandServices}>Services</h5>
+                <li>
+                  <Link to="/src/Pages/.....">Kitchen</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Living Area</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Bathroom</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Dining Hall</Link>
+                </li>
+                <li>
+                  <Link to="/src/Pages/.....">Bedroom</Link>
+                </li>
               </ul>
             </div>
           </div>
