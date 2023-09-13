@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./HeaderMobile.css";
 import BurgerActive from "./Burger/Active/BurgerActive";
@@ -20,22 +21,22 @@ function HeaderMobile(props) {
 
         <ul className="header-nav-list-mobile">
           <li>
-            <a href="http://localhost:3000">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="http://localhost:3000">Pages</a>
+            <NavLink to="/about-page">About Us</NavLink>
           </li>
           <li>
-            <a href="http://localhost:3000">Services</a>
+            <NavLink to="/src/Pages/.....">Services</NavLink>
           </li>
           <li>
-            <a href="http://localhost:3000">Project</a>
+            <NavLink to="/src/Pages/.....">Project</NavLink>
           </li>
           <li>
-            <a href="http://localhost:3000">Blog</a>
+            <NavLink to="/src/Pages/.....">Blog</NavLink>
           </li>
           <li>
-            <a href="http://localhost:3000">Contact</a>
+            <NavLink to="/src/Pages/.....">Contact</NavLink>
           </li>
         </ul>
         <HeaderSocialMobile />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import Logo from "../Logo/Logo";
 
@@ -49,19 +49,19 @@ function Footer() {
               <ul className="footer_column_list">
                 <h5 onClick={handleToggleExpandPages}>Pages</h5>
                 <li>
-                  <Link to="/src/Pages/.....">About Us</Link>
+                <NavLink to="/about-page">About Us</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Our Projects</Link>
+                  <NavLink to="">Our Projects</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Our Team</Link>
+                  <NavLink to="">Our Team</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Contact Us</Link>
+                  <NavLink to="">Contact Us</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Services</Link>
+                  <NavLink to="">Services</NavLink>
                 </li>
               </ul>
             </div>
@@ -73,19 +73,19 @@ function Footer() {
               >
                 <h5 onClick={handleToggleExpandServices}>Services</h5>
                 <li>
-                  <Link to="/src/Pages/.....">Kitchen</Link>
+                  <NavLink to="">Kitchen</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Living Area</Link>
+                  <NavLink to="">Living Area</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Bathroom</Link>
+                  <NavLink to="">Bathroom</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Dining Hall</Link>
+                  <NavLink to="">Dining Hall</NavLink>
                 </li>
                 <li>
-                  <Link to="/src/Pages/.....">Bedroom</Link>
+                  <NavLink to="">Bedroom</NavLink>
                 </li>
               </ul>
             </div>
