@@ -13,7 +13,9 @@ function AboutUs() {
       <div className="container">
         <div className="about-us-wrap">
           <div className="about-us-wrap-cart-one">
-            <h6 data-aos="fade-right">We Create The Art Of Stylish Living Stylishly</h6>
+            <h6 data-aos="fade-right">
+              We Create The Art Of Stylish Living Stylishly
+            </h6>
             <p data-aos="fade-left">
               It is a long established fact that a reader will be distracted by
               the of readable content of a page when lookings at its layouts the
@@ -30,7 +32,11 @@ function AboutUs() {
                 <p>Call Us Anytime</p>
               </div>
             </div>
-            <button data-aos="fade-up" className="about-us-button-get-started" type="button">
+            <button
+              data-aos="fade-up"
+              className="about-us-button-get-started"
+              type="button"
+            >
               <p>Get Free Estimate</p>
               <img alt="arrow" src="img/interface/coffe-vector.svg"></img>
             </button>

@@ -1,0 +1,102 @@
+.about-cart-mobile {
+  display: none;
+}
+
+.about-cart-mobile-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.about-cart-mobile-cat1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-cart-mobile-cat2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-cart-mobile-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-cart-mobile-text h2 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 5vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
+}
+
+.about-cart-mobile-text p {
+  color: #4d5053;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+}
+
+.about-cart-mobile-img1 {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../../../../../../public/img/about-page/we-do.jpg);
+  background-size: cover;
+  background-position: conter center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+.about-cart-mobile-img2 {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../../../../../../public/img/about-page/end-result.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+.about-cart-mobile-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 18px;
+  background: #292f36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  padding: 18px 32px;
+}
+
+.about-cart-mobile-button span {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: 0.36px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-cart-mobile {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    display: flex;
+  }
+}
