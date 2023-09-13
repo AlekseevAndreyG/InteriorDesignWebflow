@@ -1,0 +1,25 @@
+import React from "react";
+import "./AboutHero.css";
+function AboutHero() {
+  return (
+    <section className="about-hero">
+      <div className="about-hero-bg"></div>
+      <div className="about-hero-title">
+        <h2>About Us</h2>
+        <p>Home / About Us</p>
+      </div>
+      <div className="about-hero-text">
+        <div className="about-hero-text-cart">
+          <img alt="dot img" src="./img/interface/dot.svg"></img>
+          <span>
+            I like an interior that defies labeling. I don't really want someone
+            to walk into a room and know that I did it
+          </span>
+          <small>-BUNNY WILLIAMS</small>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default AboutHero;

@@ -1,10 +1,10 @@
 import React from "react";
-import AboutUsHero from "./components/AboutUsHero/AboutUsHero";
-
+import AboutHero from "./components/AboutHeading/AboutHero";
+import "./AboutPage.css";
 const AboutPage = () => {
   return (
-    <section>
-      <AboutUsHero />
+    <section className="about-page">
+      <AboutHero />
     </section>
   );
 };
