@@ -17,6 +17,10 @@
   gap: 20px;
 }
 
+.about-lid-designers-carts img {
+  border-radius: 50px;
+}
+
 .lid-designers-cart {
   width: 30%;
   height: 60%;
@@ -28,11 +32,11 @@
 }
 
 .column-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .column-social {
