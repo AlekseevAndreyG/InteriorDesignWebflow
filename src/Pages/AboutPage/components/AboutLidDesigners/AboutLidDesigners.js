@@ -5,7 +5,11 @@ function AboutLidDesigners() {
   const [selectedDiv, setSelectedDiv] = useState(null);
 
   const handleDivClick = (divNumber) => {
-    setSelectedDiv(selectedDiv === divNumber ? null : divNumber);
+    if (selectedDiv === divNumber) {
+      setSelectedDiv(null);
+    } else {
+      setSelectedDiv(divNumber);
+    }
   };
 
   return (
