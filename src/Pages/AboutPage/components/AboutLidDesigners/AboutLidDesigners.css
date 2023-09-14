@@ -9,3 +9,36 @@
   align-items: center;
   gap: 20px;
 }
+
+.about-lid-designers-carts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lid-designers-cart {
+  width: 30%;
+  height: 60%;
+}
+
+.lid-designers-cart img {
+  width: 100%;
+  height: 100%;
+}
+
+.column-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
