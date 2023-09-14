@@ -5,12 +5,43 @@ function AboutLidDesigners() {
   const [selectedDiv, setSelectedDiv] = useState(null);
 
   const handleDivClick = (divNumber) => {
-    if (selectedDiv === divNumber) {
-      setSelectedDiv(null);
-    } else {
-      setSelectedDiv(divNumber);
-    }
+    setSelectedDiv(selectedDiv === divNumber ? null : divNumber);
   };
+
+  const designers = [
+    {
+      number: 1,
+      name: "Michael Smith",
+      country: "USA",
+      phone: "+1 (378) 400-1234",
+      email: "michael@email.com",
+      image: "img/avatar/liders/design1.jpg",
+    },
+    {
+      number: 2,
+      name: "Raichel Springfield",
+      country: "Australia",
+      phone: "+1 (378) 355-1222",
+      email: "raichel@email.com",
+      image: "img/avatar/liders/design2.jpg",
+    },
+    {
+      number: 3,
+      name: "Andrew Garcia",
+      country: "Mexico",
+      phone: "+1 (378) 307-1119",
+      email: "andrew@email.com",
+      image: "img/avatar/liders/design3.jpg",
+    },
+    {
+      number: 4,
+      name: "Milana Hill",
+      country: "Australia",
+      phone: "+1 (378) 355-1222",
+      email: "milana@email.com",
+      image: "img/avatar/liders/design4.jpg",
+    },
+  ];
 
   return (
     <section className="about-lid-designers">
@@ -21,190 +52,55 @@ function AboutLidDesigners() {
             To see information about our top specialists, click on the photo
           </small>
           <div className="about-lid-designers-carts">
-            <div
-              className={`lid-designers-cart cart-one ${
-                selectedDiv === 1 ? "selected" : ""
-              }`}
-              onClick={() => handleDivClick(1)}
-            >
-              <img src="img/avatar/liders/design1.jpg" alt="avatar"></img>
-              {selectedDiv === 1 && (
-                <div className="column-info">
-                  <h3>Michael Smith</h3>
-                  <small>Designer USA</small>
-                  <div className="column-social">
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/facebook.png"
-                        alt="facebook icon"
-                      ></img>
+            {designers.map((designer) => (
+              <div
+                key={designer.number}
+                className={`lid-designers-cart cart-${designer.number} ${
+                  selectedDiv === designer.number ? "selected" : ""
+                }`}
+                onClick={() => handleDivClick(designer.number)}
+              >
+                <img src={designer.image} alt="avatar"></img>
+                {selectedDiv === designer.number && (
+                  <div className="column-info">
+                    <h3>{designer.name}</h3>
+                    <small>Designer {designer.country}</small>
+                    <ul className="column-social">
+                      <a href="http://localhost:3000">
+                        <img
+                          src="img/social/facebook.svg"
+                          alt="facebook icon"
+                        ></img>
+                      </a>
+                      <a href="http://localhost:3000">
+                        <img
+                          src="img/social/twitter.svg"
+                          alt="twitter icon"
+                        ></img>
+                      </a>
+                      <a href="http://localhost:3000">
+                        <img
+                          src="img/social/instagram.svg"
+                          alt="instagram icon"
+                        ></img>
+                      </a>
+                      <a href="http://localhost:3000">
+                        <img
+                          src="img/social/linkedin.svg"
+                          alt="instagram icon"
+                        ></img>
+                      </a>
+                    </ul>
+                    <a type="tel" href={`tel:${designer.phone}`}>
+                      {designer.phone}
                     </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/twitter.png"
-                        alt="twitter icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/instagram.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/linkedin.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                  </div>
-                  <a type="tel" href="tel:+13784001234">
-                    +1 (378) 400-1234
-                  </a>
-                  <a type="mail" href="mailto:michael@email.com">
-                    michael@email.com
-                  </a>
-                </div>
-              )}
-            </div>
-            <div
-              className={`lid-designers-cart cart-two ${
-                selectedDiv === 2 ? "selected" : ""
-              }`}
-              onClick={() => handleDivClick(2)}
-            >
-              <img src="img/avatar/liders/design2.jpg" alt="avatar"></img>
-              {selectedDiv === 2 && (
-                <div className="column-info">
-                  <h3>Raichel Springfield</h3>
-                  <small>Designer Austrlia</small>
-                  <div className="column-social">
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/facebook.png"
-                        alt="facebook icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/twitter.png"
-                        alt="twitter icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/instagram.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/linkedin.png"
-                        alt="instagram icon"
-                      ></img>
+                    <a type="mail" href={`mailto:${designer.email}`}>
+                      {designer.email}
                     </a>
                   </div>
-                  <a type="tel" href="tel:+13784001234">
-                    +1 (378) 355-1222
-                  </a>
-                  <a type="mail" href="mailto:raichel@email.com">
-                    raichel@email.com
-                  </a>
-                </div>
-              )}
-            </div>
-            <div
-              className={`lid-designers-cart cart-three ${
-                selectedDiv === 3 ? "selected" : ""
-              }`}
-              onClick={() => handleDivClick(3)}
-            >
-              <img src="img/avatar/liders/design3.jpg" alt="avatar"></img>
-              {selectedDiv === 3 && (
-                <div className="column-info">
-                  <h3>Andrew Garcia</h3>
-                  <small>Designer Mexico</small>
-                  <div className="column-social">
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/facebook.png"
-                        alt="facebook icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/twitter.png"
-                        alt="twitter icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/instagram.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/linkedin.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                  </div>
-                  <a type="tel" href="tel:+13784001234">
-                    +1 (378) 307-1119
-                  </a>
-                  <a type="mail" href="mailto:raichel@email.com">
-                    Andrew@email.com
-                  </a>
-                </div>
-              )}
-            </div>
-            <div
-              className={`lid-designers-cart cart-four ${
-                selectedDiv === 4 ? "selected" : ""
-              }`}
-              onClick={() => handleDivClick(4)}
-            >
-              <img src="img/avatar/liders/design4.jpg" alt="avatar"></img>
-              {selectedDiv === 4 && (
-                <div className="column-info">
-                  <h3>Milana Hill</h3>
-                  <small>Designer Austrlia</small>
-                  <div className="column-social">
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/facebook.png"
-                        alt="facebook icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/twitter.png"
-                        alt="twitter icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/instagram.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                    <a href="http://localhost:3000">
-                      <img
-                        src="img/social/linkedin.png"
-                        alt="instagram icon"
-                      ></img>
-                    </a>
-                  </div>
-                  <a type="tel" href="tel:+13784001234">
-                    +1 (378) 355-1222
-                  </a>
-                  <a type="mail" href="mailto:milana@email.com">
-                    milanal@email.com
-                  </a>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
