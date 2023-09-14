@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutCart.css";
+
 function AboutCart() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
+  const handleImageClick = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section className="about-cart">
+      {isModalOpen && (
+        <div className="modal" onClick={handleCloseModal}>
+          <img src={modalImage} alt="modal-img" className="modal-image" />
+        </div>
+      )}
       <div className="container">
         <div className="about-cart-wrap">
           <div className="about-cart-cat1">
@@ -19,7 +37,11 @@ function AboutCart() {
               </button>
             </div>
             <div className="about-cart-cat1-item2">
-              <img src="img/about-page/we-do.jpg" alt="img"></img>
+              <img
+                src="img/about-page/we-do.jpg"
+                alt="img"
+                onClick={() => handleImageClick("img/about-page/we-do.jpg")}
+              ></img>
             </div>
           </div>
           <div className="about-cart-cat2">
@@ -36,7 +58,13 @@ function AboutCart() {
               </button>
             </div>
             <div className="about-cart-cat2-item2">
-              <img src="img/about-page/end-result.jpg" alt="img"></img>
+              <img
+                src="img/about-page/end-result.jpg"
+                alt="img"
+                onClick={() =>
+                  handleImageClick("img/about-page/end-result.jpg")
+                }
+              ></img>
             </div>
           </div>
         </div>
