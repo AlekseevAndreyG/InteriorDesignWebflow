@@ -59,7 +59,8 @@
   border-radius: 50px;
   border: 0.2px solid #4d5053;
   opacity: 0;
-  transition: all 0.3s linear;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
   position: absolute;
   background-color: #fff;
   display: flex;
@@ -72,9 +73,9 @@
 }
 
 .column-info-click {
-  pointer-events: none;
+  pointer-events: all;
   opacity: 1;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in;
 }
 
 .column-info h3 {
@@ -86,7 +87,7 @@
   font-weight: 400;
 }
 
-.column-info small {
+.column-info span {
   color: #4d5053;
   font-family: Jost;
   font-size: 1.8vh;
@@ -112,8 +113,43 @@
 }
 
 @media screen and (max-width: 1590px) {
-  .column-info {
+  .lid-designers-cart {
     width: 300px;
     height: 440px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .lid-designers-cart {
+    width: 300px;
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .lid-designers-cart {
+    width: 240px;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lid-designers-cart {
+    width: 200px;
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .lid-designers-cart {
+    width: 170px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-lid-designers-carts {
+    flex-direction: column;
+    gap: 60px;
   }
 }

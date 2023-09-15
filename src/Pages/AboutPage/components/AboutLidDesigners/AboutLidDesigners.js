@@ -4,7 +4,8 @@ import "./AboutLidDesigners.css";
 function AboutLidDesigners() {
   const [selectedDiv, setSelectedDiv] = useState(null);
 
-  const handleDivClick = (divNumber) => {
+  const handleDivClick = (e, divNumber) => {
+    e.preventDefault();
     setSelectedDiv(selectedDiv === divNumber ? null : divNumber);
   };
 
@@ -63,7 +64,7 @@ function AboutLidDesigners() {
                 className={`lid-designers-cart cart-${designer.number} ${
                   selectedDiv === designer.number ? "selected" : ""
                 }`}
-                onClick={() => handleDivClick(designer.number)}
+                onClick={(e) => handleDivClick(e, designer.number)}
               >
                 <div
                   className={`column-info ${
@@ -71,8 +72,11 @@ function AboutLidDesigners() {
                   }`}
                 >
                   <h3>{designer.name}</h3>
-                  <small>Designer {designer.country}</small>
-                  <ul className="column-social">
+                  <span>Designer {designer.country}</span>
+                  <ul
+                    className="column-social"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <a href="http://localhost:3000">
                       <img
                         src="img/social/facebook.svg"
@@ -98,10 +102,18 @@ function AboutLidDesigners() {
                       ></img>
                     </a>
                   </ul>
-                  <a type="tel" href={`tel:${designer.phone}`}>
+                  <a
+                    type="tel"
+                    href={`tel:${designer.phone}`}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     {designer.phone}
                   </a>
-                  <a type="mail" href={`mailto:${designer.email}`}>
+                  <a
+                    type="mail"
+                    href={`mailto:${designer.email}`}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     {designer.email}
                   </a>
                 </div>
