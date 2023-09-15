@@ -105,20 +105,20 @@ function AboutLidDesigners() {
                     </a>
                   </ul>
                   <div className="column-info-contact">
-                  <a
-                    type="tel"
-                    href={`tel:${designer.phone}`}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {designer.phone}
-                  </a>
-                  <a
-                    type="mail"
-                    href={`mailto:${designer.email}`}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {designer.email}
-                  </a>
+                    <a
+                      type="tel"
+                      href={`tel:${designer.phone}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {designer.phone}
+                    </a>
+                    <a
+                      type="mail"
+                      href={`mailto:${designer.email}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {designer.email}
+                    </a>
                   </div>
                 </div>
               </div>
