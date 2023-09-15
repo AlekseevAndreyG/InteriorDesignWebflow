@@ -71,8 +71,10 @@ function AboutLidDesigners() {
                     selectedDiv === designer.number ? "column-info-click" : ""
                   }`}
                 >
-                  <h3>{designer.name}</h3>
-                  <span>Designer {designer.country}</span>
+                  <di className="column-info-text">
+                    <h3>{designer.name}</h3>
+                    <span>Designer {designer.country}</span>
+                  </di>
                   <ul
                     className="column-social"
                     onClick={(e) => e.stopPropagation()}
@@ -102,6 +104,7 @@ function AboutLidDesigners() {
                       ></img>
                     </a>
                   </ul>
+                  <div className="column-info-contact">
                   <a
                     type="tel"
                     href={`tel:${designer.phone}`}
@@ -116,6 +119,7 @@ function AboutLidDesigners() {
                   >
                     {designer.email}
                   </a>
+                  </div>
                 </div>
               </div>
             ))}
