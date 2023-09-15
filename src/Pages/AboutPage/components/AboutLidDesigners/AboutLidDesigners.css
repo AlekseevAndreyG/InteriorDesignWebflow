@@ -1,6 +1,32 @@
 .about-lid-designers {
   margin-top: 110px;
+  padding-top: 80px;
+  background-color: #f4f0ec;
+  padding-bottom: 80px;
   margin-bottom: 110px;
+}
+
+.about-lid-designers h2 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 5vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
+}
+
+.about-lid-designers small {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
 .about-lid-designers-wrap {
@@ -18,25 +44,37 @@
 }
 
 .lid-designers-cart {
-  width: 30%;
-  height: 60%;
-}
-
-.lid-designers-cart img {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 550px;
   border-radius: 50px;
-  width: 100%;
-  height: 100%;
 }
 
 .column-info {
-  margin-top: 30px;
+  width: 100%;
+  height: 100%;
   border-radius: 50px;
+  border: 0.2px solid #4d5053;
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: absolute;
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
-  gap: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column-info-click {
+  pointer-events: none;
+  opacity: 1;
+  transition: all 0.3s linear;
 }
 
 .column-info h3 {
@@ -46,8 +84,6 @@
   font-size: 2.5vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 37.5px */
-  letter-spacing: 0.25px;
 }
 
 .column-info small {
@@ -56,8 +92,6 @@
   font-size: 1.8vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.18px;
 }
 
 .column-info a {
@@ -67,8 +101,6 @@
   font-size: 1.8vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.18px;
 }
 
 .column-social {
@@ -77,4 +109,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+
+@media screen and (max-width: 1590px) {
+  .column-info {
+    width: 300px;
+    height: 440px;
+  }
 }

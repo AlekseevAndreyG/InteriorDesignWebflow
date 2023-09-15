@@ -16,6 +16,7 @@ function AboutLidDesigners() {
       phone: "+1 (378) 400-1234",
       email: "michael@email.com",
       image: "img/avatar/liders/design1.jpg",
+      photo: "img/designer-photo/design1-photo.jpg",
     },
     {
       number: 2,
@@ -24,6 +25,7 @@ function AboutLidDesigners() {
       phone: "+1 (378) 355-1222",
       email: "raichel@email.com",
       image: "img/avatar/liders/design2.jpg",
+      photo: "img/designer-photo/design2-photo.jpg",
     },
     {
       number: 3,
@@ -32,6 +34,7 @@ function AboutLidDesigners() {
       phone: "+1 (378) 307-1119",
       email: "andrew@email.com",
       image: "img/avatar/liders/design3.jpg",
+      photo: "img/designer-photo/design3-photo.jpg",
     },
     {
       number: 4,
@@ -40,6 +43,7 @@ function AboutLidDesigners() {
       phone: "+1 (378) 355-1222",
       email: "milana@email.com",
       image: "img/avatar/liders/design4.jpg",
+      photo: "img/designer-photo/design4-photo.jpg",
     },
   ];
 
@@ -55,50 +59,52 @@ function AboutLidDesigners() {
             {designers.map((designer) => (
               <div
                 key={designer.number}
+                style={{ backgroundImage: `url(${designer.image})` }}
                 className={`lid-designers-cart cart-${designer.number} ${
                   selectedDiv === designer.number ? "selected" : ""
                 }`}
                 onClick={() => handleDivClick(designer.number)}
               >
-                <img src={designer.image} alt="avatar"></img>
-                {selectedDiv === designer.number && (
-                  <div className="column-info">
-                    <h3>{designer.name}</h3>
-                    <small>Designer {designer.country}</small>
-                    <ul className="column-social">
-                      <a href="http://localhost:3000">
-                        <img
-                          src="img/social/facebook.svg"
-                          alt="facebook icon"
-                        ></img>
-                      </a>
-                      <a href="http://localhost:3000">
-                        <img
-                          src="img/social/twitter.svg"
-                          alt="twitter icon"
-                        ></img>
-                      </a>
-                      <a href="http://localhost:3000">
-                        <img
-                          src="img/social/instagram.svg"
-                          alt="instagram icon"
-                        ></img>
-                      </a>
-                      <a href="http://localhost:3000">
-                        <img
-                          src="img/social/linkedin.svg"
-                          alt="instagram icon"
-                        ></img>
-                      </a>
-                    </ul>
-                    <a type="tel" href={`tel:${designer.phone}`}>
-                      {designer.phone}
+                <div
+                  className={`column-info ${
+                    selectedDiv === designer.number ? "column-info-click" : ""
+                  }`}
+                >
+                  <h3>{designer.name}</h3>
+                  <small>Designer {designer.country}</small>
+                  <ul className="column-social">
+                    <a href="http://localhost:3000">
+                      <img
+                        src="img/social/facebook.svg"
+                        alt="facebook icon"
+                      ></img>
                     </a>
-                    <a type="mail" href={`mailto:${designer.email}`}>
-                      {designer.email}
+                    <a href="http://localhost:3000">
+                      <img
+                        src="img/social/twitter.svg"
+                        alt="twitter icon"
+                      ></img>
                     </a>
-                  </div>
-                )}
+                    <a href="http://localhost:3000">
+                      <img
+                        src="img/social/instagram.svg"
+                        alt="instagram icon"
+                      ></img>
+                    </a>
+                    <a href="http://localhost:3000">
+                      <img
+                        src="img/social/linkedin.svg"
+                        alt="linkedin icon"
+                      ></img>
+                    </a>
+                  </ul>
+                  <a type="tel" href={`tel:${designer.phone}`}>
+                    {designer.phone}
+                  </a>
+                  <a type="mail" href={`mailto:${designer.email}`}>
+                    {designer.email}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
