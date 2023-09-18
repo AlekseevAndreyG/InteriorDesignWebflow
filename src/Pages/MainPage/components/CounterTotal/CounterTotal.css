@@ -1,7 +1,7 @@
 .counter-total {
   width: 100%;
   height: auto;
-  background-color: #F4F0EC;
+  background-color: #f4f0ec;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 160px auto 160px auto;
@@ -59,14 +59,17 @@
   .counter-total {
     width: 100%;
     height: auto;
-    background-color: #F4F0EC;
+    background-color: #f4f0ec;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 275px auto 160px auto;
     display: flex;
     justify-content: center;
-}
-  
+  }
+
+  .counter-total-wrap-item-text {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -10,8 +10,8 @@ import OurPartnersMobile from "./components/OurPartners/OurPartnersMobile/OurPar
 import FollowOurProjects from "./components/FollowOurProjects/FollowOurProjects";
 import FollowOurProjectMobile from "./components/FollowOurProjects/FollowOurProjectMobile/FollowOurProjectMobile";
 import CounterTotal from "./components/CounterTotal/CounterTotal";
-import WannaJoin from "./components/WannaJoin/WannaJoin";
 import ArcticleAndNews from "./components/ArcticleAndNews/ArcticleAndNews";
+import WannaJoin from "../../components/WannaJoin/WannaJoin";
 
 const MainPage = () => {
   return (

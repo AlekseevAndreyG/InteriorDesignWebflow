@@ -31,7 +31,7 @@ const FollowOurProjectMobile = () => {
     <section className="follow-our-projects-mobile">
       <div className="container">
         <div className="slider-container">
-          <h3>followour projects</h3>
+          <h3>follow our projects</h3>
           <Slider
             arrows={false}
             autoplay={false}

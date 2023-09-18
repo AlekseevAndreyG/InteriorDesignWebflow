@@ -63,12 +63,14 @@
   gap: 20px;
   padding: 20px 0 20px 0;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .services-heading-text-cart:hover {
   padding: 20px 0 20px 0;
   border-radius: 30px;
   background: #f4f0ec;
+  transition: all 0.3s ease-in;
 }
 
 .services-heading-text-cart h2 {

@@ -49,7 +49,7 @@ function Footer() {
               <ul className="footer_column_list">
                 <h5 onClick={handleToggleExpandPages}>Pages</h5>
                 <li>
-                <NavLink to="/about-page">About Us</NavLink>
+                  <NavLink to="/about-page">About Us</NavLink>
                 </li>
                 <li>
                   <NavLink to="">Our Projects</NavLink>
@@ -61,7 +61,7 @@ function Footer() {
                   <NavLink to="">Contact Us</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/services-page">Services</NavLink>
+                  <NavLink to="">Services</NavLink>
                 </li>
               </ul>
             </div>
@@ -96,7 +96,7 @@ function Footer() {
               contact@interno.com
             </a>
             <a type="tel" href="tel:1234567890">
-              (123) 456 - 7890
+              +7(123) 456 - 7890
             </a>
           </div>
         </div>

@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 80px;
-  background: #f4f0ec;
+  background: linear-gradient(to bottom, #d1c6c3 0%, #f4f0ec 50%, #ceb1a9 140%);
   border-radius: 70px;
   padding: 10% 4% 8% 4%;
 }
@@ -105,4 +105,25 @@
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
+}
+
+@media screen and (max-width: 690px) {
+  .services-how-we-work-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .services-how-we-work-cart-title-img {
+    width: 45px;
+    height: 45px;
+  }
+  .services-how-we-work-cart-wrap {
+    gap: 15px;
+  }
+
+  .services-how-we-work-cart-text {
+    gap: 10px;
+  }
 }

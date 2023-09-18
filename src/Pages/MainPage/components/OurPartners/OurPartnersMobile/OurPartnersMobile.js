@@ -1,28 +1,11 @@
 import React, { useEffect } from "react";
+import OurPartnersData from "../../../../../components/Arrays/OurPartnersData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./OurPartnersMobile.css";
-
-const slides = [
-  {
-    logo: "img/our-clients/modern-home.svg",
-  },
-  {
-    logo: "img/our-clients/vs.svg",
-  },
-  {
-    logo: "img/our-clients/brand.svg",
-  },
-  {
-    logo: "img/our-clients/nature-home.svg",
-  },
-  {
-    logo: "img/our-clients/classic-design-studio.svg",
-  },
-];
 
 const Slide = ({ imagePath }) => (
   <div className="our-partners-mobil-slide">
@@ -45,9 +28,7 @@ const OurPartnersMobile = () => {
     <section className="our-partners-mobile">
       <div className="container">
         <div className="our-partners-mobile-slider-wrap">
-          <h3 data-aos="fade-up">
-            Our partners
-          </h3>
+          <h3 data-aos="fade-up">Our partners</h3>
           <Slider
             infinite={true}
             autoplay={true}
@@ -58,7 +39,7 @@ const OurPartnersMobile = () => {
             slidesToScroll={1}
             edgeFriction={0.15}
           >
-            {slides.map((partner, index) => (
+            {OurPartnersData.map((partner, index) => (
               <Slide key={index} imagePath={partner.logo} />
             ))}
           </Slider>
