@@ -1,4 +1,4 @@
-const designers = [
+const DesignersData = [
   {
     number: 1,
     name: "Michael Smith",
@@ -37,4 +37,4 @@ const designers = [
   },
 ];
 
-export default designers;
+export default DesignersData;

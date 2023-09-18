@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import designers from "../../../../components/Arrays/Designers";
+import designersData from "../../../../components/Arrays/DesignersData";
 import "./AboutLidDesigners.css";
 
 function AboutLidDesigners() {
@@ -19,7 +19,7 @@ function AboutLidDesigners() {
             To see information about our top specialists, click on the photo
           </small>
           <div className="about-lid-designers-carts">
-            {designers.map((designer) => (
+            {designersData.map((designer) => (
               <div
                 key={designer.number}
                 style={{ backgroundImage: `url(${designer.image})` }}

@@ -74,8 +74,8 @@
     padding: 0;
   }
   100% {
-    width: 180px;
-    border: 1px solid rgba(234, 230, 206, 0.744);
+    width: 140px;
+    border: 1px solid rgba(192, 191, 187, 0.744);
     padding: 7px;
   }
 }
