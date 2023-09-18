@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import MainPage from "./Pages/MainPage/MainPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
+import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 
 const Wrapper = ({ children }) => {
   return (
@@ -32,6 +33,14 @@ function App() {
           element={
             <Wrapper>
               <AboutPage />
+            </Wrapper>
+          }
+        />
+        <Route
+          path="/services-page"
+          element={
+            <Wrapper>
+              <ServicesPage />
             </Wrapper>
           }
         />
