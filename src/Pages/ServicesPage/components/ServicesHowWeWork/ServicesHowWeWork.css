@@ -11,6 +11,7 @@
   background: linear-gradient(to bottom, #d1c6c3 0%, #f4f0ec 50%, #ceb1a9 140%);
   border-radius: 70px;
   padding: 10% 4% 8% 4%;
+  box-shadow: 0px 0px 50px 0px #c5bfbf;
 }
 
 .services-how-we-work-heading {
@@ -30,6 +31,8 @@
 }
 
 .services-how-we-work-heading span {
+  width: 80%;
+  margin: 0 auto;
   color: #4d5053;
   text-align: center;
   font-size: 2vh;
