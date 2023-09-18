@@ -5,7 +5,7 @@
 }
 
 .services-heading-bg {
-  background-image: url("../../../../../public/img/about-page/about-hero-bg.jpg");
+  background-image: url("../../../../../public/img/services-page/services-heading-bg.jpg");
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -19,7 +19,7 @@
   justify-content: flex-start;
 }
 
-.services-heading-title h2 {
+.services-heading-title h1 {
   position: relative;
   z-index: 3;
   color: #292f36;
@@ -37,7 +37,7 @@
   line-height: 125%; /* 62.5px */
 }
 
-.services-heading-title p {
+.services-heading-title h6 {
   position: relative;
   z-index: 3;
   top: -125px;
@@ -50,63 +50,66 @@
   letter-spacing: 0.22px;
 }
 
-.services-heading-text {
-  margin: 0 auto;
-  width: 60%;
-  height: 40vh;
-  background-image: url("../../../../../public/img/about-page/Pattern.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.services-heading-text-carts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 60px;
 }
 
 .services-heading-text-cart {
-  margin: 0 auto;
-  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   gap: 20px;
+  padding: 20px 0 20px 0;
+  align-items: center;
 }
 
-.services-heading-text-cart img {
-  width: 30px;
-  height: 30px;
+.services-heading-text-cart:hover {
+  padding: 20px 0 20px 0;
+  border-radius: 30px;
+  background: #f4f0ec;
+}
+
+.services-heading-text-cart h2 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 2.5vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 31.25px */
 }
 
 .services-heading-text-cart span {
-  color: #292f36;
+  width: 95%;
+  color: #4d5053;
   text-align: center;
-  font-family: DM Serif Display;
-  font-size: 3vh;
-  font-style: italic;
+  font-size: 1.8vh;
+  font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 43.75px */
-  letter-spacing: 0.7px;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
 }
 
-.services-heading-text-cart small {
-  color: #292f36;
-  text-align: center;
-  font-family: DM Serif Display;
-  font-size: 1.6vh;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 125%; /* 43.75px */
-  letter-spacing: 0.7px;
+.services-heading-text-cart button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .services-heading-text-carts {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+  }
 }
 
 @media screen and (max-width: 426px) {
   .services-heading-title h2 {
     width: 60%;
-  }
-
-  .services-heading-text {
-    width: 95%;
-    height: 35vh;
   }
 }

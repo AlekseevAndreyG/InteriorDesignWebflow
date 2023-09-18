@@ -14,16 +14,16 @@ function HNavLine(props) {
           <NavLink to="/about-page">About Us</NavLink>
         </li>
         <li>
-          <NavLink to="/src/Pages/.....">Services</NavLink>
+          <NavLink to="/services-page">Services</NavLink>
         </li>
         <li>
-          <NavLink to="/src/Pages/.....">Project</NavLink>
+          <NavLink to="">Project</NavLink>
         </li>
         <li>
-          <NavLink to="/src/Pages/.....">Blog</NavLink>
+          <NavLink to="">Blog</NavLink>
         </li>
         <li>
-          <NavLink to="/src/Pages/.....">Contact</NavLink>
+          <NavLink to="">Contact</NavLink>
         </li>
         <HeaderSearch />
       </ul>
