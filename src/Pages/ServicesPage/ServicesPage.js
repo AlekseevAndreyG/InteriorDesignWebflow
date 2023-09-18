@@ -1,7 +1,7 @@
 import React from "react";
 
 function ServicesPage() {
-  return <section></section>;
+  return <section className="services-page"></section>;
 }
 
 export default ServicesPage;

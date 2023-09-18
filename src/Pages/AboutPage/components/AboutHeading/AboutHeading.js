@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
+import "./AboutHeading.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./AboutHero.css";
-function AboutHero() {
+function AboutHeading() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
   return (
-    <section className="about-hero">
-      <div className="about-hero-bg"></div>
-      <div className="about-hero-title">
+    <section className="about-heading">
+      <div className="about-heading-bg"></div>
+      <div className="about-heading-title">
         <h2>About Us</h2>
         <p>Home / About Us</p>
       </div>
-      <div className="about-hero-text">
-        <div className="about-hero-text-cart">
+      <div className="about-heading-text">
+        <div className="about-heading-text-cart">
           <img alt="dot img" src="./img/interface/dot.svg"></img>
           <span>
             I like an interior that defies labeling. I don't really want someone
@@ -29,4 +29,4 @@ function AboutHero() {
   );
 }
 
-export default AboutHero;
+export default AboutHeading;

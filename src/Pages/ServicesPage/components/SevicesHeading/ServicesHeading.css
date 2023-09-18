@@ -1,10 +1,10 @@
-.about-hero {
+.services-heading {
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
-.about-hero-bg {
+.services-heading-bg {
   background-image: url("../../../../../public/img/about-page/about-hero-bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -12,14 +12,14 @@
   height: 25vh;
 }
 
-.about-hero-title {
+.services-heading-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.about-hero-title h2 {
+.services-heading-title h2 {
   position: relative;
   z-index: 3;
   color: #292f36;
@@ -37,7 +37,7 @@
   line-height: 125%; /* 62.5px */
 }
 
-.about-hero-title p {
+.services-heading-title p {
   position: relative;
   z-index: 3;
   top: -125px;
@@ -50,7 +50,7 @@
   letter-spacing: 0.22px;
 }
 
-.about-hero-text {
+.services-heading-text {
   margin: 0 auto;
   width: 60%;
   height: 40vh;
@@ -64,7 +64,7 @@
   justify-content: center;
 }
 
-.about-hero-text-cart {
+.services-heading-text-cart {
   margin: 0 auto;
   width: 60%;
   display: flex;
@@ -73,12 +73,12 @@
   gap: 20px;
 }
 
-.about-hero-text-cart img {
+.services-heading-text-cart img {
   width: 30px;
   height: 30px;
 }
 
-.about-hero-text-cart span {
+.services-heading-text-cart span {
   color: #292f36;
   text-align: center;
   font-family: DM Serif Display;
@@ -89,7 +89,7 @@
   letter-spacing: 0.7px;
 }
 
-.about-hero-text-cart small {
+.services-heading-text-cart small {
   color: #292f36;
   text-align: center;
   font-family: DM Serif Display;
@@ -101,11 +101,11 @@
 }
 
 @media screen and (max-width: 426px) {
-  .about-hero-title h2 {
+  .services-heading-title h2 {
     width: 60%;
   }
 
-  .about-hero-text {
+  .services-heading-text {
     width: 95%;
     height: 35vh;
   }

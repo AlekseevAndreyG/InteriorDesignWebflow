@@ -10,8 +10,8 @@ import OurPartnersMobile from "./components/OurPartners/OurPartnersMobile/OurPar
 import FollowOurProjects from "./components/FollowOurProjects/FollowOurProjects";
 import FollowOurProjectMobile from "./components/FollowOurProjects/FollowOurProjectMobile/FollowOurProjectMobile";
 import CounterTotal from "./components/CounterTotal/CounterTotal";
-import Blog from "./components/Blog/Blog";
 import WannaJoin from "./components/WannaJoin/WannaJoin";
+import ArcticleAndNews from "./components/ArcticleAndNews/ArcticleAndNews";
 
 const MainPage = () => {
   return (
@@ -27,7 +27,7 @@ const MainPage = () => {
       <FollowOurProjects />
       <FollowOurProjectMobile />
       <CounterTotal />
-      <Blog />
+      <ArcticleAndNews />
       <WannaJoin />
     </>
   );
