@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import OurPartnersData from "../../../../components/Arrays/OurPartnersData";
+import OurPartnersData from "../Arrays/OurPartnersData";
 
 import "./OurPartners.css";
 
