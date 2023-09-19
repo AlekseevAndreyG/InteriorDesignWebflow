@@ -94,9 +94,11 @@
   letter-spacing: 0.22px;
 }
 
-.services-heading-text-cart button {
+.services-heading-text-cart-link {
   background-color: transparent;
   border: none;
+  text-decoration: none;
+  color: #4d5053;
   cursor: pointer;
   display: flex;
   gap: 10px;

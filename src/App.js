@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import MainPage from "./Pages/MainPage/MainPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
+import ServicesMorePage from "./Pages/ServiecesMorePage/ServicesMorePage";
 
 const Wrapper = ({ children }) => {
   return (
@@ -41,6 +42,14 @@ function App() {
           element={
             <Wrapper>
               <ServicesPage />
+            </Wrapper>
+          }
+        />
+        <Route
+          path="/services-more-page"
+          element={
+            <Wrapper>
+              <ServicesMorePage />
             </Wrapper>
           }
         />

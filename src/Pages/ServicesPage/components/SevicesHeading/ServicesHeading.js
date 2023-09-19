@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./ServicesHeading.css";
@@ -24,10 +25,14 @@ function ServicesHeading() {
             <div className="services-heading-text-cart" key={index}>
               <h2>{ServicesData.title}</h2>
               <span>{ServicesData.description}</span>
-              <button type="link">
+              <NavLink
+                to="/services-more-page"
+                className={"services-heading-text-cart-link"}
+                type="link"
+              >
                 <p>Read More</p>
                 <img src={ServicesData.image} alt="arrow" />
-              </button>
+              </NavLink>
             </div>
           ))}
         </div>
