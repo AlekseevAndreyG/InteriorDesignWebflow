@@ -9,30 +9,22 @@ function ServicesMorePlayer() {
   const [played, setPlayed] = useState(0);
   const playerRef = useRef(null);
 
-  const handlePlay = () => {
-    setPlaying(!isPlaying);
+  const handleVolumeChange = (e) => {
+    setVolume(parseFloat(e.target.value));
   };
 
-  const handleFullScreen = () => {
-    setFullScreen(!isFullScreen);
-  };
-
-  const handleVolumeChange = (value) => {
-    setVolume(parseFloat(value));
-  };
-
-  const handleProgress = (progress) => {
-    setPlayed(progress.played);
-  };
-
-  const handleSeek = (value) => {
-    setPlayed(parseFloat(value));
+  const handleSeek = (e) => {
+    setPlayed(parseFloat(e.target.value));
   };
 
   const handleToggleFullScreen = () => {
     if (playerRef.current) {
       playerRef.current.requestFullscreen();
     }
+  };
+
+  const handleToggle = () => {
+    setPlaying((prev) => !prev);
   };
 
   return (
@@ -47,7 +39,7 @@ function ServicesMorePlayer() {
               volume={volume}
               width="100%"
               height="100%"
-              onProgress={handleProgress}
+              onProgress={({ played }) => setPlayed(played)}
               onSeek={handleSeek}
             />
           </div>
@@ -59,7 +51,7 @@ function ServicesMorePlayer() {
               max={1}
               step={0.1}
               value={volume}
-              onChange={(e) => handleVolumeChange(e.target.value)}
+              onChange={handleVolumeChange}
             />
             <input
               className="seek-slider"
@@ -68,11 +60,11 @@ function ServicesMorePlayer() {
               max={1}
               step={0.01}
               value={played}
-              onChange={(e) => handleSeek(e.target.value)}
+              onChange={handleSeek}
             />
             <button
               className={`play-button ${isPlaying ? "playing" : ""}`}
-              onClick={handlePlay}
+              onClick={handleToggle}
             ></button>
             <button
               className={`fullscreen-button ${
