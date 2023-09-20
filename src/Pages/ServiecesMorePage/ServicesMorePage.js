@@ -5,12 +5,14 @@ import ServicesMorePageHeading from "./components/ServicesMorePageHeading/Servic
 import OurPartners from "../../components/OurPartners/OurPartners";
 import OurPartnersMobile from "../../components/OurPartners/OurPartnersMobile/OurPartnersMobile";
 import CounterTotal from "../../components/CounterTotal/CounterTotal";
+import ServicesMorePlayer from "./components/ServicesMorePlayer/ServicesMorePlayer";
 function ServicesMorePage() {
   return (
     <section className="services-more-page">
       <ServicesMorePageHeading />
       <OurPartners />
       <OurPartnersMobile />
+      <ServicesMorePlayer />
       <CounterTotal />
     </section>
   );

@@ -1,0 +1,95 @@
+.services-more-player {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-more-player-wrap {
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.player-wrapper.fullscreen {
+  padding-bottom: 0;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../../../../public/img/services-more-page/player/play.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.play-button.playing {
+  background-image: url("../../../../../public/img/services-more-page/player/pause.png");
+}
+
+.fullscreen-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../../../../public/img/services-more-page/player/expand.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.fullscreen-button.exit-fullscreen {
+  background-image: url("../../../../../public/img/services-more-page/player/expand.png");
+}
+
+.volume-slider {
+  width: 100px;
+  height: 5px;
+  -webkit-appearance: none;
+  background-color: #999;
+  border-radius: 5px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
