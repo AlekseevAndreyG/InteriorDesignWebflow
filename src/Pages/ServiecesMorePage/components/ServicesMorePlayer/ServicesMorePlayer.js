@@ -14,12 +14,26 @@ function ServicesMorePlayer() {
   };
 
   const handleSeek = (e) => {
-    setPlayed(parseFloat(e.target.value));
+    if (e.target && typeof e.target.value !== "undefined") {
+      const seekTime = parseFloat(e.target.value);
+      setPlayed(seekTime);
+      if (playerRef.current && typeof playerRef.current.seekTo === "function") {
+        playerRef.current.seekTo(seekTime);
+      }
+    }
   };
 
   const handleToggleFullScreen = () => {
-    if (playerRef.current) {
-      playerRef.current.requestFullscreen();
+    if (playerRef.current && playerRef.current.container) {
+      if (playerRef.current.container.requestFullscreen) {
+        playerRef.current.container.requestFullscreen();
+      } else if (playerRef.current.container.mozRequestFullScreen) {
+        playerRef.current.container.mozRequestFullScreen();
+      } else if (playerRef.current.container.webkitRequestFullscreen) {
+        playerRef.current.container.webkitRequestFullscreen();
+      } else if (playerRef.current.container.msRequestFullscreen) {
+        playerRef.current.container.msRequestFullscreen();
+      }
     }
   };
 

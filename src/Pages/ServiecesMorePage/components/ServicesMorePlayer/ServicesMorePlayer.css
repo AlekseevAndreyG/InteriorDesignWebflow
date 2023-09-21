@@ -16,6 +16,10 @@
   overflow: hidden;
 }
 
+.player-wrapper div {
+  border-radius: 25px;
+}
+
 .player-wrapper.fullscreen {
   padding-bottom: 0;
 }
@@ -32,7 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 10px;
+  background-color: #f4f0ec;
+  padding: 20px 8px 15px 8px;
 }
 
 .play-button {
@@ -72,6 +77,11 @@
   outline: none;
 }
 
+.seek-slider {
+  width: 40%;
+  height: 5px;
+}
+
 .volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 10px;
@@ -87,4 +97,30 @@
   background-color: #666;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .play-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fullscreen-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .volume-slider {
+    width: 100px;
+    height: 5px;
+    -webkit-appearance: none;
+    background-color: #999;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .seek-slider {
+    width: 40%;
+    height: 5px;
+  }
 }
