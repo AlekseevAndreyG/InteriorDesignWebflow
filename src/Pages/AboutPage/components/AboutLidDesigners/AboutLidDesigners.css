@@ -167,3 +167,10 @@
     gap: 60px;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .lid-designers-cart {
+    width: 290px;
+    height: 440px;
+  }
+}
