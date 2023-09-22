@@ -3,8 +3,21 @@
   padding: 0;
 }
 
-body {
-  font-family: "DM Serif Display", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p,
+span,
+a,
+li,
+button {
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -18,25 +31,10 @@ body {
   src: url(./fonts/DMSerifDisplay-Regular.ttf) format("trutype");
 }
 
-@font-face {
-  font-family: "DM Serif Display Italic";
-  src: url(./fonts/DMSerifDisplay-Italic.ttf) format("trutype");
-}
-
-@font-face {
-  font-family: "jost";
-  src: url(./fonts/Jost-VariableFont_wght.ttf) format("trutype");
-}
-
-@font-face {
-  font-family: "jost italic";
-  src: url(./fonts/Jost-Italic-VariableFont_wght.ttf) format("trutype");
-}
-
 @media screen and (max-width: 426px) {
   .container {
     overflow: hidden;
-    margin: 0 auto ;
+    margin: 0 auto;
     max-width: 95%;
   }
 }

@@ -41,12 +41,12 @@ function Footer() {
             </div>
           </div>
           <div className="footer-wrap-column">
-            <div
-              className={`footer_column_list ${
-                isExpandedPages ? "expanded" : ""
-              }`}
-            >
-              <ul className="footer_column_list">
+            <div className="footer_column">
+              <ul
+                className={`footer_column_list ${
+                  isExpandedPages ? "expanded" : ""
+                }`}
+              >
                 <h5 onClick={handleToggleExpandPages}>Pages</h5>
                 <li>
                   <NavLink to="/about-page">About Us</NavLink>
@@ -65,7 +65,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="footer_object_two_item_services footer_column">
+            <div className="footer_column">
               <ul
                 className={`footer_column_list ${
                   isExpandedServices ? "expanded" : ""

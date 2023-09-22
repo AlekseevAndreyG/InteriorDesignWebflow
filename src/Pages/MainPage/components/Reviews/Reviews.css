@@ -26,6 +26,7 @@
 }
 
 .reviews-info {
+  min-width: 108px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -81,12 +82,13 @@
 }
 
 .reviews-avatar-wrap {
+  max-width: 190px;
   padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: left;
   flex-direction: row;
-  gap: 25px;
+  gap: 10px;
 }
 
 .reviews-avatar-wrap img {
@@ -103,8 +105,8 @@
   }
 
   .reviews-cart {
-    height: 300px;
-    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
   }
 
   /* первые два элемента */
@@ -134,9 +136,10 @@
   }
 
   .review-text {
+    width: 80%;
     padding: 10px;
     display: flex;
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 }
 

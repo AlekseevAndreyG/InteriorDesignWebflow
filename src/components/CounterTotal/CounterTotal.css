@@ -1,10 +1,9 @@
 .counter-total {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  background-color: #f4f0ec;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin: 160px auto 160px auto;
+  margin: 300px auto 160px auto;
   display: flex;
   justify-content: center;
 }
@@ -21,11 +20,15 @@
 
 .counter-total-wrap-item-text {
   width: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50px;
+  border-radius: 15px;
+  padding: 25px 4px 25px 4px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: #f4f0ec;
 }
 
 .counter-total-wrap-item h5 {
@@ -54,30 +57,30 @@
   letter-spacing: 0.22px;
 }
 
-@media screen and (max-width: 768px) {
-  .counter-total {
-    width: 100%;
-    height: auto;
-    background-color: #f4f0ec;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 275px auto 160px auto;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1024px) {
+  .counter-total-wrap {
   }
+}
 
+@media screen and (max-width: 768px) {
   .counter-total-wrap-item-text {
     width: 100px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 620px) {
   .counter-total-wrap {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
     justify-content: center;
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .counter-total-wrap {
+    display: flex;
+    flex-direction: column;
   }
 }

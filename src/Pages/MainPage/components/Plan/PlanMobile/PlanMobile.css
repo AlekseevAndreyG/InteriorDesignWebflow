@@ -41,7 +41,6 @@
 
 .plan-mobile-slide-title {
   color: var(--accent, #4b4a49);
-  font-family: Open Sans;
   font-size: 4vh;
   font-style: normal;
   font-weight: 700;
@@ -52,7 +51,6 @@
   width: 70%;
   color: #8d836b;
   text-align: center;
-  font-family: Open Sans;
   font-size: 2.4vh;
   font-style: normal;
   font-weight: 600;
@@ -81,7 +79,6 @@
     width: 100%;
     color: #8d836b;
     text-align: center;
-    font-family: Open Sans;
     font-size: 3vh;
     font-style: normal;
     font-weight: 600;

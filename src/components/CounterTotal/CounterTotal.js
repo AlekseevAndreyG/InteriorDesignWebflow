@@ -15,7 +15,7 @@ function CounterTotal() {
       <div className="counter-total-wrap">
         {CounterTotalData.map((item, index) => (
           <div className="counter-total-wrap-item" key={index}>
-            <div className="counter-total-wrap-item-text">
+            <div data-aos="fade-up" className="counter-total-wrap-item-text">
               <h5>{item.counter}</h5>
               <p>{item.subtitle}</p>
             </div>
