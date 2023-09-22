@@ -23,7 +23,9 @@ function AboutUs() {
             </p>
             <div data-aos="fade-right" className="about-us-wrap-call-wrap">
               <button className="about-us-button-call">
-                <img alt="call img" src="img/interface/icon-call.png"></img>
+                <a href="tel:+4733378901">
+                  <img alt="call img" src="img/interface/icon-call.png"></img>
+                </a>
               </button>
               <div className="about-us-wrap-call-text">
                 <span>
@@ -32,11 +34,7 @@ function AboutUs() {
                 <p>Call Us Anytime</p>
               </div>
             </div>
-            <button
-              data-aos="fade-up"
-              className="about-us-button-get-started"
-              type="button"
-            >
+            <button className="about-us-button-get-started" type="button">
               <p>Get Free Estimate</p>
               <img alt="arrow" src="img/interface/coffe-vector.svg"></img>
             </button>

@@ -16,7 +16,6 @@
 .follow-our-projects-title {
   color: #292f36;
   text-align: center;
-  font-family: DM Serif Display;
   font-size: 5vh;
   font-style: normal;
   font-weight: 700;
@@ -37,11 +36,12 @@
 .follow-our-projects-cart-wrap {
   display: grid;
   grid-template-columns: auto auto;
+  justify-items: center;
   gap: 50px;
 }
 
 .follow-our-projects-cart {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -50,7 +50,6 @@
 
 .follow-our-projects-cart h3 {
   color: #292f36;
-  font-family: DM Serif Display;
   font-size: 2.3vh;
   font-style: normal;
   font-weight: 900;

@@ -30,7 +30,6 @@
   margin: 0 auto;
   border-radius: 40px;
   top: -80px;
-  font-family: DM Serif Display;
   font-size: 5vh;
   font-style: normal;
   font-weight: 400;
@@ -81,7 +80,6 @@
 .about-heading-text-cart span {
   color: #292f36;
   text-align: center;
-  font-family: DM Serif Display;
   font-size: 3vh;
   font-style: italic;
   font-weight: 400;
@@ -92,7 +90,6 @@
 .about-heading-text-cart small {
   color: #292f36;
   text-align: center;
-  font-family: DM Serif Display;
   font-size: 1.6vh;
   font-style: italic;
   font-weight: 400;
