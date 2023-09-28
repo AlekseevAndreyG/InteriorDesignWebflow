@@ -13,7 +13,7 @@ function AboutHeading() {
       <div className="about-heading-bg"></div>
       <div className="about-heading-title">
         <h2>About Us</h2>
-        <p>Home / About Us</p>
+        <h6>Home / About Us</h6>
       </div>
       <div className="about-heading-text">
         <div className="about-heading-text-cart">
