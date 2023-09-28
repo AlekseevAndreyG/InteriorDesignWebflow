@@ -17,7 +17,7 @@ function HNavLine(props) {
           <NavLink to="/services-page">Services</NavLink>
         </li>
         <li>
-          <NavLink to="">Project</NavLink>
+          <NavLink to="/project-page">Project</NavLink>
         </li>
         <li>
           <NavLink to="">Blog</NavLink>

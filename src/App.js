@@ -6,6 +6,7 @@ import MainPage from "./Pages/MainPage/MainPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import ServicesMorePage from "./Pages/ServiecesMorePage/ServicesMorePage";
+import ProjectPage from "./Pages/ProjectPage/ProjectPage";
 
 const Wrapper = ({ children }) => {
   return (
@@ -50,6 +51,14 @@ function App() {
           element={
             <Wrapper>
               <ServicesMorePage />
+            </Wrapper>
+          }
+        />
+        <Route
+          path="/project-page"
+          element={
+            <Wrapper>
+              <ProjectPage />
             </Wrapper>
           }
         />
