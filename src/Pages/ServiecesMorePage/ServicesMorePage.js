@@ -6,6 +6,7 @@ import OurPartners from "../../components/OurPartners/OurPartners";
 import OurPartnersMobile from "../../components/OurPartners/OurPartnersMobile/OurPartnersMobile";
 import CounterTotal from "../../components/CounterTotal/CounterTotal";
 import ServicesMorePlayer from "./components/ServicesMorePlayer/ServicesMorePlayer";
+import ServicesMoreDescr from "./components/ServicesMoreDescr/ServicesMoreDescr";
 function ServicesMorePage() {
   return (
     <section className="services-more-page">
@@ -13,6 +14,7 @@ function ServicesMorePage() {
       <OurPartners />
       <OurPartnersMobile />
       <ServicesMorePlayer />
+      <ServicesMoreDescr />
       <CounterTotal />
     </section>
   );
