@@ -1,0 +1,32 @@
+.project-nav-panel {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: #f6dabc 0.5px solid;
+  border-radius: 15px;
+}
+
+.project-title-button {
+  width: 120px;
+  background: transparent;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project-title-button:hover {
+  background: #e3c5a6;
+  border-radius: 15px;
+  transition: all 0.3s ease-in;
+}
+
+.project-title-button.active {
+  background: #cda274;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
